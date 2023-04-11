@@ -1,0 +1,134 @@
+.audio-field {
+    // display: flex;
+    align-items: center;
+    // width: 100%;
+    // max-width: 400px;
+    position: relative;
+    padding: 3rem 2rem;
+    background-color: #f3f3f3;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+
+
+    .audio-input {
+        display: flex;
+        align-items: center;
+        // flex-grow: 1;
+
+        .audio-label {
+            flex-grow: 1;
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border: 2px dashed #ccc;
+            border-radius: 0.5rem;
+
+            &:hover {
+                border-color: #555;
+                color: #555;
+            }
+        }
+
+        .audio-upload {
+            background-color: transparent;
+            border: none;
+            font-size: 1.5rem;
+            color: #555;
+            margin-left: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #333;
+            }
+        }
+
+        input[type='file'] {
+            display: none;
+        }
+    }
+
+    .or {
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #4289e1;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .audio-record {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .audio-start-record {
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: #555;
+            // margin: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #4289e1;
+            }
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .audio-stop-record {
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: #4289e1;
+            // margin: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #e92323;
+            }
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .mic-recording {
+            width: 100%;
+            height: 5rem;
+            margin: 1rem 0;
+        }
+
+        .react-mic--visible {
+            width: 100%;
+            height: 5rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .mic-stop {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: #555;
+            color: white;
+        }
+
+        .react-mic__button:hover {
+            background-color: #3466a8;
+        }
+
+        .react-mic__button:active {
+            transform: translate(-50%, -50%) scale(0.9);
+        }
+    }
+}
